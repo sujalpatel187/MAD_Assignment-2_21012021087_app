@@ -6,6 +6,7 @@ import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 
@@ -19,6 +20,7 @@ class AddTransactionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_transaction)
+        Toast.makeText(this, "Put '-' before ammount when you puts spent money", Toast.LENGTH_SHORT).show()
 
         labelInput = findViewById(R.id.labelInput)
         amountInput = findViewById(R.id.amountInput)
